@@ -14,5 +14,10 @@ describe('Berlin Clock', function() {
 
         expect(result).toBe('JOOO');
     });
+    it("Doit renvoyer 'JJOO' lorsque la minute est '02' ", function() {
+        const result = main.getLumieresMinutesSimples(2);
+
+        expect(result).toBe('JJOO');
+    });
 
 });
