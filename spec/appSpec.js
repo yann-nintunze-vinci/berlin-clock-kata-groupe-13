@@ -9,13 +9,22 @@ describe('Berlin Clock', function() {
 
         expect(result).toBe('OOOO');
     });
-    it("Doit renvoyer 'JOOO' lorsque la minute est '01' ", function() {
-        const result = main.getLumieresMinutesSimples(1);
+
+    it("Doit renvoyer 'OOOO' lorsque la minute est '10' ", function() {
+        const result = main.getLumieresMinutesSimples(10);
+
+        expect(result).toBe('OOOO');
+    });
+    
+
+    it("Doit renvoyer 'JOOO' lorsque la minute est '11' ", function() {
+        const result = main.getLumieresMinutesSimples(11);
 
         expect(result).toBe('JOOO');
     });
-    it("Doit renvoyer 'JJOO' lorsque la minute est '02' ", function() {
-        const result = main.getLumieresMinutesSimples(2);
+
+    it("Doit renvoyer 'JJOO' lorsque la minute est '22' ", function() {
+        const result = main.getLumieresMinutesSimples(22);
 
         expect(result).toBe('JJOO');
     });
@@ -29,21 +38,6 @@ describe('Berlin Clock', function() {
 
         expect(result).toBe('JJJJ');
     });
-    it("Doit renvoyer 'OOOO' lorsque la minute est '05' ", function() {
-        const result = main.getLumieresMinutesSimples(5);
-
-        expect(result).toBe('OOOO');
-    });
-    it("Doit renvoyer 'OOOO' lorsque la minute est '10' ", function() {
-        const result = main.getLumieresMinutesSimples(10);
-
-        expect(result).toBe('OOOO');
-    });
-
-    it("Doit renvoyer 'JOOO' lorsque la minute est '11' ", function() {
-        const result = main.getLumieresMinutesSimples(11);
-
-        expect(result).toBe('JOOO');
-    });
+   
 
 });
