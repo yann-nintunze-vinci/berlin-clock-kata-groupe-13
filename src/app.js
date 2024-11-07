@@ -11,7 +11,7 @@ export class Main {
         if(this.estMultipleDe5(minute)|| minute===0) return 'OOOO';
 
         if(minute === 4) return 'JJJJ';
-        if(minute === 3) return 'JJJO';
+        if(this.leResteVaut3(minute)) return 'JJJO';
         if(this.leResteVaut2(minute)) return 'JJOO';
         if(this.leResteVaut1(minute)) return 'JOOO';
     }
@@ -25,6 +25,9 @@ export class Main {
     }
     leResteVaut2(number) {
         return number % 5 === 2;
+    }
+    leResteVaut3(number) {
+        return number % 5 === 3;
     }
 
 
