@@ -8,9 +8,8 @@ export class Main {
 
 
     getLumieresMinutesSimples(minute) {
-        if(this.estMultipleDe5(minute)|| minute===0) return 'OOOO';
-
-        if(minute === 4) return 'JJJJ';
+        if(this.estMultipleDe5(minute)) return 'OOOO';
+        if(this.leResteVaut4(minute)) return 'JJJJ';
         if(this.leResteVaut3(minute)) return 'JJJO';
         if(this.leResteVaut2(minute)) return 'JJOO';
         if(this.leResteVaut1(minute)) return 'JOOO';
@@ -28,6 +27,9 @@ export class Main {
     }
     leResteVaut3(number) {
         return number % 5 === 3;
+    }
+    leResteVaut4(number) {
+        return number % 5 === 4;
     }
 
 
