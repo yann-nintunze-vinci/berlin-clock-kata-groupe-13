@@ -18,7 +18,7 @@ export class Main {
   }
 
   getLumieresBlocDe5Heures(heure){
-    const blocs = ["OOOO","ROOO"];
+    const blocs = ["OOOO","ROOO","RROO"];
     return blocs[this.quotientDivisionPar5(heure)];
   }
 
