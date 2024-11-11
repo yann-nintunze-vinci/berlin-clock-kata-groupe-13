@@ -13,6 +13,7 @@ export class Main {
   getLumieresBlocDe5(minute) {
     if(this.leResteDuneDivisionPar5(minute) === 1) return "JOOOOOOOOOO";
     if(this.leResteDuneDivisionPar5(minute) === 2) return "JJOOOOOOOOO";
+    if(this.leResteDuneDivisionPar5(minute) === 3) return "JJROOOOOOOO";
     return "OOOOOOOOOOO";
   }
 
