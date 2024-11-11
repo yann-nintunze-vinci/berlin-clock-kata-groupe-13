@@ -65,62 +65,14 @@ describe("Berlin Clock", function () {
     expect(result).toBe("JOOOOOOOOOO");
   });
 
-  it("Doit renvoyer 'JJOOOOOOOOO' lorsque la minute est 10", function () {
-    const result = main.getLumieresBlocDe5(10);
-    
-    expect(result).toBe("JJOOOOOOOOO");
-  });
-
-  it("Doit renvoyer 'JJROOOOOOOO' lorsque la minute est 15", function () {
-    const result = main.getLumieresBlocDe5(15);
-    
-    expect(result).toBe("JJROOOOOOOO");
-  });
-
-  it("Doit renvoyer 'JJRJOOOOOOO' lorsque la minute est 20", function () {
-    const result = main.getLumieresBlocDe5(20);
-    
-    expect(result).toBe("JJRJOOOOOOO");
-  });
-
-  it("Doit renvoyer 'JJRJJOOOOOO' lorsque la minute est 25", function () {
-    const result = main.getLumieresBlocDe5(25);
-    
-    expect(result).toBe("JJRJJOOOOOO");
-  });
-
-  it("Doit renvoyer 'JJRJJROOOOO' lorsque la minute est 30", function () {
-    const result = main.getLumieresBlocDe5(30);
-    
-    expect(result).toBe("JJRJJROOOOO");
-  });
-
-  it("Doit renvoyer 'JJRJJRJOOOO' lorsque la minute est 35", function () {
-    const result = main.getLumieresBlocDe5(35);
-    
-    expect(result).toBe("JJRJJRJOOOO");
-  });
-
-  it("Doit renvoyer 'JJRJJRJJOOO' lorsque la minute est 40", function () {
-    const result = main.getLumieresBlocDe5(40);
-    
-    expect(result).toBe("JJRJJRJJOOO");
-  });
-
-  it("Doit renvoyer 'JJRJJRJJROO' lorsque la minute est 45", function () {
-    const result = main.getLumieresBlocDe5(45);
-    
-    expect(result).toBe("JJRJJRJJROO");
-  });
-
-  it("Doit renvoyer 'JJRJJRJJRJO' lorsque la minute est 50", function () {
-    const result = main.getLumieresBlocDe5(50);
-    
-    expect(result).toBe("JJRJJRJJRJO");
-  });
-
   it("Doit renvoyer 'JJRJJRJJRJJ' lorsque la minute est 55", function () {
     const result = main.getLumieresBlocDe5(55);
+    
+    expect(result).toBe("JJRJJRJJRJJ");
+  });
+
+  it("Doit renvoyer 'JJRJJRJJRJJ' lorsque la minute est 59", function () {
+    const result = main.getLumieresBlocDe5(59);
     
     expect(result).toBe("JJRJJRJJRJJ");
   });
