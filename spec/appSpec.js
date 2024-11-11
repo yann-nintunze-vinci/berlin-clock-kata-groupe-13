@@ -128,4 +128,10 @@ describe("Berlin Clock", function () {
 
       expect(result).toBe("OOOO");
     });
+
+    it("Doit renvoyer 'ROOO' lorsque l'heure est '5' ", function () {
+      const result = main.getLumieresBlocDe5Heures(5);
+      
+      expect(result).toBe("ROOO");
+    });
 });
