@@ -13,7 +13,7 @@ export class Main {
   }
 
   getLumieresHeuresSimples(heure) {
-      const blocs = ["OOOO","ROOO","RROO"];
+      const blocs = ["OOOO","ROOO","RROO", "RRRO"];
       return blocs[this.resteDivisionPar5(heure)];
   }
 

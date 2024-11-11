@@ -96,4 +96,10 @@ describe("Berlin Clock", function () {
     
         expect(result).toBe("RROO");
     });
+
+    it("Doit renvoyer 'RRRO' lorsque l'heure est '3' ", function () {
+        const result = main.getLumieresHeuresSimples(3);
+    
+        expect(result).toBe("RRRO");
+    });
 });
