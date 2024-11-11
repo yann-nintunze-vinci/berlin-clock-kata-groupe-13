@@ -152,4 +152,11 @@ describe("Berlin Clock", function () {
 
       expect(result).toBe("RRRR");
     });
+
+    it("Doit renvoyer 'RRRR' lorsque l'heure est 23 et 'RRRO' pour les heures simples", function () {
+      const result = main.getLumieresBlocDe5Heures(23);
+      const result2 = main.getLumieresHeuresSimples(23);
+      expect(result).toBe("RRRR");
+      expect(result2).toBe("RRRO");
+    });
 });
