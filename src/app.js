@@ -10,6 +10,10 @@ export class Main {
     if (this.leResteVaut1(minute)) return "JOOO";
   }
 
+  getLumieresBlocDe5(minute) {
+    if(minute === 0) return "OOOOOOOOOOO";
+  }
+
   estMultipleDe5(number) {
     return number % 5 === 0;
   }

@@ -39,4 +39,10 @@ describe("Berlin Clock", function () {
 
     expect(result).toBe("JJJJ");
   });
+
+  it("Doit renvoyer 'OOOOOOOOOOO' lorsque la minute est 0", function () {
+    const result = main.getLumieresBlocDe5(0);
+
+    expect(result).toBe("OOOOOOOOOOO");
+  });
 });
