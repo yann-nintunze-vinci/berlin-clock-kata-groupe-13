@@ -3,11 +3,8 @@
 
 export class Main {
   getLumieresMinutesSimples(minute) {
-    if (this.estMultipleDe5(minute)) return "OOOO";
-    if (this.leResteVaut4(minute)) return "JJJJ";
-    if (this.leResteVaut3(minute)) return "JJJO";
-    if (this.leResteVaut2(minute)) return "JJOO";
-    if (this.leResteVaut1(minute)) return "JOOO";
+    const blocs = ["OOOO", "JOOO", "JJOO", "JJJO", "JJJJ"];
+    return blocs[this.resteDivisionPar5(minute)];
   }
 
 getLumieresBlocDe5(minute) {
@@ -19,23 +16,7 @@ quotientDivisionPar5(minute) {
     return Math.floor(minute / 5);
   }
 
-  estMultipleDe5(number) {
-    return number % 5 === 0;
-  }
-
-  leResteVaut1(number) {
-    return number % 5 === 1;
-  }
-
-  leResteVaut2(number) {
-    return number % 5 === 2;
-  }
-
-  leResteVaut3(number) {
-    return number % 5 === 3;
-  }
-
-  leResteVaut4(number) {
-    return number % 5 === 4;
+resteDivisionPar5(minute) {
+    return minute % 5;
   }
 }
