@@ -71,9 +71,15 @@ describe("Berlin Clock", function () {
     expect(result).toBe("JJOOOOOOOOO");
   });
 
-  it("Doit renvoyer 'JJROOOOOOOO' lorsque la minute est 10", function () {
+  it("Doit renvoyer 'JJROOOOOOOO' lorsque la minute est 15", function () {
     const result = main.getLumieresBlocDe5(15);
     
     expect(result).toBe("JJROOOOOOOO");
+  });
+
+  it("Doit renvoyer 'JJRJOOOOOOO' lorsque la minute est 20", function () {
+    const result = main.getLumieresBlocDe5(20);
+    
+    expect(result).toBe("JJRJOOOOOOO");
   });
 });

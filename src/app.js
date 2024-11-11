@@ -14,6 +14,7 @@ export class Main {
     if(this.leResteDuneDivisionPar5(minute) === 1) return "JOOOOOOOOOO";
     if(this.leResteDuneDivisionPar5(minute) === 2) return "JJOOOOOOOOO";
     if(this.leResteDuneDivisionPar5(minute) === 3) return "JJROOOOOOOO";
+    if(this.leResteDuneDivisionPar5(minute) === 4) return "JJRJOOOOOOO";
     return "OOOOOOOOOOO";
   }
 
