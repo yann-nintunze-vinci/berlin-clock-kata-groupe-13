@@ -11,9 +11,13 @@ export class Main {
   }
 
   getLumieresBlocDe5(minute) {
-    if(Math.floor(minute/5) === 1) return "JOOOOOOOOOO";
+    if(this.leResteDuneDivisionPar5(minute) === 1) return "JOOOOOOOOOO";
     return "OOOOOOOOOOO";
     
+  }
+
+  leResteDuneDivisionPar5(minute) {
+    return Math.floor(minute / 5);
   }
 
   estMultipleDe5(number) {
