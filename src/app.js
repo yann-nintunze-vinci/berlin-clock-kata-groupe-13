@@ -10,22 +10,12 @@ export class Main {
     if (this.leResteVaut1(minute)) return "JOOO";
   }
 
-  getLumieresBlocDe5(minute) {
-    if(this.leResteDuneDivisionPar5(minute) === 1) return "JOOOOOOOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 2) return "JJOOOOOOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 3) return "JJROOOOOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 4) return "JJRJOOOOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 5) return "JJRJJOOOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 6) return "JJRJJROOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 7) return "JJRJJRJOOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 8) return "JJRJJRJJOOO";
-    if(this.leResteDuneDivisionPar5(minute) === 9) return "JJRJJRJJROO";
-    if(this.leResteDuneDivisionPar5(minute) === 10) return "JJRJJRJJRJO";
-    if(this.leResteDuneDivisionPar5(minute) === 11) return "JJRJJRJJRJJ";
-    return "OOOOOOOOOOO";
-  }
+getLumieresBlocDe5(minute) {
+    const blocs = ["OOOOOOOOOOO", "JOOOOOOOOOO", "JJOOOOOOOOO", "JJROOOOOOOO", "JJRJOOOOOOO", "JJRJJOOOOOO", "JJRJJROOOOO", "JJRJJRJOOOO", "JJRJJRJJOOO", "JJRJJRJJROO", "JJRJJRJJRJO", "JJRJJRJJRJJ"];
+    return blocs[this.quotientDivisionPar5(minute)];
+}
 
-  leResteDuneDivisionPar5(minute) {
+quotientDivisionPar5(minute) {
     return Math.floor(minute / 5);
   }
 
