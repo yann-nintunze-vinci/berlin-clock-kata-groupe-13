@@ -12,8 +12,8 @@ export class Main {
 
   getLumieresBlocDe5(minute) {
     if(minute === 5) return "JOOOOOOOOOO";
-    if(minute === 4) return "OOOOOOOOOOO";
-    if(minute === 0) return "OOOOOOOOOOO";
+    return "OOOOOOOOOOO";
+    
   }
 
   estMultipleDe5(number) {
