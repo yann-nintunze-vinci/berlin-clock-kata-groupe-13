@@ -7,7 +7,7 @@ export class Main {
     return blocs[this.resteDivisionPar5(minute)];
   }
 
-  getLumieresBlocDe5(minute) {
+  getLumieresBlocDe5Minutes(minute) {
       const blocs = ["OOOOOOOOOOO", "JOOOOOOOOOO", "JJOOOOOOOOO", "JJROOOOOOOO", "JJRJOOOOOOO", "JJRJJOOOOOO", "JJRJJROOOOO", "JJRJJRJOOOO", "JJRJJRJJOOO", "JJRJJRJJROO", "JJRJJRJJRJO", "JJRJJRJJRJJ"];
       return blocs[this.quotientDivisionPar5(minute)];
   }
@@ -15,6 +15,11 @@ export class Main {
   getLumieresHeuresSimples(heure) {
       const blocs = ["OOOO","ROOO","RROO", "RRRO", "RRRR"];
       return blocs[this.resteDivisionPar5(heure)];
+  }
+
+  getLumieresBlocDe5Heures(heure){
+    const blocs = ["OOOO"];
+    return blocs[0];
   }
 
   quotientDivisionPar5(minute) {

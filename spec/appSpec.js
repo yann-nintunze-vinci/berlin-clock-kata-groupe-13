@@ -42,37 +42,37 @@ describe("Berlin Clock", function () {
 
   //Lignes Bloc de 5 minutes
   it("Doit renvoyer 'OOOOOOOOOOO' lorsque la minute est 0", function () {
-    const result = main.getLumieresBlocDe5(0);
+    const result = main.getLumieresBlocDe5Minutes(0);
 
     expect(result).toBe("OOOOOOOOOOO");
   });
 
   it("Doit renvoyer 'OOOOOOOOOOO' lorsque la minute est 4", function () {
-    const result = main.getLumieresBlocDe5(4);
+    const result = main.getLumieresBlocDe5Minutes(4);
 
     expect(result).toBe("OOOOOOOOOOO");
   });
 
   it("Doit renvoyer 'JOOOOOOOOOO' lorsque la minute est 5", function () {
-    const result = main.getLumieresBlocDe5(5);
+    const result = main.getLumieresBlocDe5Minutes(5);
     
     expect(result).toBe("JOOOOOOOOOO");
   });
 
   it("Doit renvoyer 'JOOOOOOOOOO' lorsque la minute est 6", function () {
-    const result = main.getLumieresBlocDe5(6);
+    const result = main.getLumieresBlocDe5Minutes(6);
     
     expect(result).toBe("JOOOOOOOOOO");
   });
 
   it("Doit renvoyer 'JJRJJRJJRJJ' lorsque la minute est 55", function () {
-    const result = main.getLumieresBlocDe5(55);
+    const result = main.getLumieresBlocDe5Minutes(55);
     
     expect(result).toBe("JJRJJRJJRJJ");
   });
 
   it("Doit renvoyer 'JJRJJRJJRJJ' lorsque la minute est 59", function () {
-    const result = main.getLumieresBlocDe5(59);
+    const result = main.getLumieresBlocDe5Minutes(59);
     
     expect(result).toBe("JJRJJRJJRJJ");
   });
@@ -119,5 +119,13 @@ describe("Berlin Clock", function () {
         const result = main.getLumieresHeuresSimples(13);
     
         expect(result).toBe("RRRO");
+    });
+
+  // Lignes de Blocs de 5 heures
+
+    it("Doit renvoyer 'OOOO' lorsque l'heure est '0' ", function () {
+      const result = main.getLumieresBlocDe5Heures(0);
+
+      expect(result).toBe("OOOO");
     });
 });
