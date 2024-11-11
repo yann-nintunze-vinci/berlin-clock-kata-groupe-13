@@ -19,7 +19,7 @@ export class Main {
 
   getLumieresBlocDe5Heures(heure){
     const blocs = ["OOOO","ROOO"];
-    return blocs[Math.floor(heure/5)];
+    return blocs[this.quotientDivisionPar5(heure)];
   }
 
   quotientDivisionPar5(minute) {
