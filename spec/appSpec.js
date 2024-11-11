@@ -106,4 +106,10 @@ describe("Berlin Clock", function () {
     
     expect(result).toBe("JJRJJRJJOOO");
   });
+
+  it("Doit renvoyer 'JJRJJRJJROO' lorsque la minute est 45", function () {
+    const result = main.getLumieresBlocDe5(45);
+    
+    expect(result).toBe("JJRJJRJJROO");
+  });
 });
