@@ -11,7 +11,7 @@ export class Main {
   }
 
   getLumieresBlocDe5(minute) {
-    if(minute === 5) return "JOOOOOOOOOO";
+    if(Math.floor(minute/5) === 1) return "JOOOOOOOOOO";
     return "OOOOOOOOOOO";
     
   }
