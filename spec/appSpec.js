@@ -76,4 +76,12 @@ describe("Berlin Clock", function () {
     
     expect(result).toBe("JJRJJRJJRJJ");
   });
+
+  //ligne heures simples
+
+    it("Doit renvoyer 'OOOO' lorsque l'heure est '0' ", function () {
+        const result = main.getLumieresHeuresSimples(0);
+    
+        expect(result).toBe("OOOO");
+    });
 });
