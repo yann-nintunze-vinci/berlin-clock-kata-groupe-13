@@ -12,8 +12,8 @@ export class Main {
 
   getLumieresBlocDe5(minute) {
     if(this.leResteDuneDivisionPar5(minute) === 1) return "JOOOOOOOOOO";
+    if(this.leResteDuneDivisionPar5(minute) === 2) return "JJOOOOOOOOO";
     return "OOOOOOOOOOO";
-    
   }
 
   leResteDuneDivisionPar5(minute) {

@@ -39,7 +39,7 @@ describe("Berlin Clock", function () {
 
     expect(result).toBe("JJJJ");
   });
-  
+
   //Lignes Bloc de 5 minutes
   it("Doit renvoyer 'OOOOOOOOOOO' lorsque la minute est 0", function () {
     const result = main.getLumieresBlocDe5(0);
@@ -63,5 +63,11 @@ describe("Berlin Clock", function () {
     const result = main.getLumieresBlocDe5(6);
     
     expect(result).toBe("JOOOOOOOOOO");
+  });
+
+  it("Doit renvoyer 'JJOOOOOOOOO' lorsque la minute est 10", function () {
+    const result = main.getLumieresBlocDe5(10);
+    
+    expect(result).toBe("JJOOOOOOOOO");
   });
 });
