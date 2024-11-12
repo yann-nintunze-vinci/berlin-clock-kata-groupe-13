@@ -22,6 +22,11 @@ export class Main {
     return blocs[this.quotientDivisionPar5(heure)];
   }
 
+  getLumieresSecondes(secondes){
+    const blocs = ["R"];
+    return blocs[0];
+  }
+
   quotientDivisionPar5(minute) {
       return Math.floor(minute / 5);
     }

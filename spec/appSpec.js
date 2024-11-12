@@ -159,4 +159,11 @@ describe("Berlin Clock", function () {
       expect(result).toBe("RRRR");
       expect(result2).toBe("RRRO");
     });
+
+    // lumière des secondes
+    it("Doit renvoyer 'R' lorsque les secondes sont à 0", function () {
+      const result = main.getLumieresSecondes(0);
+  
+      expect(result).toBe("R");
+    });
 });
