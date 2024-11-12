@@ -1,7 +1,12 @@
-//const date = new Date();
-//const minutes = date.getMinutes();
+
 
 export class Main {
+  date = Date.now();
+  minutes = date.getMinutes();
+  heures = date.getHours();
+  secondes = date.getSeconds();
+
+  
   getLumieresMinutesSimples(minute) {
     const blocs = ["OOOO", "JOOO", "JJOO", "JJJO", "JJJJ"];
     return blocs[this.resteDivisionPar5(minute)];
