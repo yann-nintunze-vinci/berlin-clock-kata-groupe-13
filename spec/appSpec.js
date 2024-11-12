@@ -166,4 +166,10 @@ describe("Berlin Clock", function () {
   
       expect(result).toBe("R");
     });
+
+    it("Doit renvoyer 'O' lorsque les secondes sont à 1", function () {
+      const result = main.getLumieresSecondes(1);
+  
+      expect(result).toBe("O");
+    });
 });

@@ -23,8 +23,8 @@ export class Main {
   }
 
   getLumieresSecondes(secondes){
-    const blocs = ["R"];
-    return blocs[0];
+    const blocs = ["R", "O"];
+    return blocs[secondes % 2];
   }
 
   quotientDivisionPar5(minute) {
