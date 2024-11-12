@@ -1,10 +1,24 @@
 
 
 export class Main {
-  date = Date.now();
-  minutes = date.getMinutes();
-  heures = date.getHours();
-  secondes = date.getSeconds();
+  
+
+  startClock() {
+      setInterval(() => {
+        let date = new Date();
+        let minutes = date.getMinutes();
+        let heures = date.getHours();
+        let secondes = date.getSeconds();
+
+        console.log(date);
+        //console.log(this.getLumieresSecondes(secondes));
+        //console.log(this.getLumieresBlocDe5Heures(heures));
+        //console.log(this.getLumieresHeuresSimples(heures));
+        //console.log(this.getLumieresBlocDe5Minutes(minutes));
+        //console.log(this.getLumieresMinutesSimples(minutes));
+      }, 1000);
+    
+  }
 
   
   getLumieresMinutesSimples(minute) {
