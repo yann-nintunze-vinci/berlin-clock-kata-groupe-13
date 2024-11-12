@@ -6,7 +6,6 @@ export class Main {
       let heures = date.getHours();
       let secondes = date.getSeconds();
 
-      console.log(date);
       console.log(this.getLumieresSecondes(secondes));
       console.log(this.getLumieresBlocDe5Heures(heures));
       console.log(this.getLumieresHeuresSimples(heures));
