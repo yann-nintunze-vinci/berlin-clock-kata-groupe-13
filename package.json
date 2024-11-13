@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "clock": "node .\\src\\app.js"
   },
   "author": "",
   "license": "ISC",
