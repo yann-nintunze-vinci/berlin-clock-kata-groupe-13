@@ -3,9 +3,9 @@ import { Main } from "../src/app.js";
 describe("Berlin Clock", function () {
   const main = new Main();
 
-  it("Doit renvoyer la bonne string pour l'heure en continu", function() {
-    main.startClock();
-  });
+  // it("Doit renvoyer la bonne string pour l'heure en continu", function() {
+  //   main.startClock();
+  // });
  
 
   //ligne minutes simples

@@ -1,10 +1,11 @@
 export class Main {
   startClock() {
+    setInterval(() => {
       let date = new Date();
       let minutes = date.getMinutes();
       let heures = date.getHours();
       let secondes = date.getSeconds();
-      this.secondes =this.secondes + 1;
+      // this.secondes =this.secondes + 1;
 
 
       console.log(this.getLumieresSecondes(secondes));
@@ -12,10 +13,11 @@ export class Main {
       console.log(this.getLumieresHeuresSimples(heures));
       console.log(this.getLumieresBlocDe5Minutes(minutes));
       console.log(this.getLumieresMinutesSimples(minutes));
-      console.log(heures, "  -  ", minutes, "  -  ", secondes);
-      
-    setTimeout(this.startClock(),1000);
-  };  
+      // console.log(heures, "  -  ", minutes, "  -  ", secondes);
+
+      // setTimeout(this.startClock(),1000);
+    }, 1000);
+  };
 
   getLumieresMinutesSimples(minute) {
     const blocs = ["OOOO", "JOOO", "JJOO", "JJJO", "JJJJ"];
