@@ -5,19 +5,21 @@ export class Main {
       let minutes = date.getMinutes();
       let heures = date.getHours();
       let secondes = date.getSeconds();
-      // this.secondes =this.secondes + 1;
 
 
-      console.log(this.getLumieresSecondes(secondes));
-      console.log(this.getLumieresBlocDe5Heures(heures));
-      console.log(this.getLumieresHeuresSimples(heures));
-      console.log(this.getLumieresBlocDe5Minutes(minutes));
-      console.log(this.getLumieresMinutesSimples(minutes));
-      // console.log(heures, "  -  ", minutes, "  -  ", secondes);
 
-      // setTimeout(this.startClock(),1000);
+      this.displayClock(secondes, heures, minutes);
+      
     }, 1000);
   };
+
+  displayClock(secondes, heures, minutes) {
+    console.log(this.getLumieresSecondes(secondes));
+    console.log(this.getLumieresBlocDe5Heures(heures));
+    console.log(this.getLumieresHeuresSimples(heures));
+    console.log(this.getLumieresBlocDe5Minutes(minutes));
+    console.log(this.getLumieresMinutesSimples(minutes));
+  }
 
   getLumieresMinutesSimples(minute) {
     const blocs = ["OOOO", "JOOO", "JJOO", "JJJO", "JJJJ"];
